@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 input.name {
   display: block;
   width: 100%;
@@ -32,5 +32,10 @@ input.name {
   border: none;
   margin: 1.5rem 0;
   padding: 0 0.5rem;
+
+  &:focus {
+    outline: none;
+    box-shadow: #111 0 0 12px 1px;
+  }
 }
 </style>

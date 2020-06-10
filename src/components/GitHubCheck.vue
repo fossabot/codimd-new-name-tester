@@ -51,12 +51,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.success {
-  color: #34d834;
-}
-.failure {
-  color: #ffde26;
-}
-</style>
