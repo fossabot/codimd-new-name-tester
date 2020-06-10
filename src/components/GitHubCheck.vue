@@ -30,7 +30,7 @@ export default {
       this.conflicts = []
       const urlName = encodeURIComponent(name)
       const [respUser, respOrg] = await Promise.all([
-        fetch('https://api.github.com/user/' + urlName).then(resp => resp.json()),
+        fetch('https://api.github.com/users/' + urlName).then(resp => resp.json()),
         fetch('https://api.github.com/orgs/' + urlName).then(resp => resp.json())
       ]).catch(err => console.error(err))
 
